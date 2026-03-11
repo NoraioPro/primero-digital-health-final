@@ -59,58 +59,51 @@ export const galleryItems: GalleryItem[] = [
 
     // Pediatric (from Kids Cases)
     {
-        id: "pedia-1",
-        type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 6.49.02 PM.jpeg",
-        title: "Pediatric Care",
-        category: "pediatric"
-    },
-    {
         id: "pedia-2",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 6.54.53 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 6.54.53 PM.jpeg",
         title: "Happy Little Patient",
         category: "pediatric"
     },
     {
         id: "pedia-3",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 6.54.54 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 6.54.54 PM.jpeg",
         title: "Smile Design for Kids",
         category: "pediatric"
     },
     {
         id: "pedia-4",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 6.54.55 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 6.54.55 PM.jpeg",
         title: "Gentle Dental Treatment",
         category: "pediatric"
     },
     {
         id: "pedia-5",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 6.54.56 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 6.54.56 PM.jpeg",
         title: "Modern Pediatric Care",
         category: "pediatric"
     },
     {
         id: "pedia-6",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 7.02.46 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 7.02.46 PM.jpeg",
         title: "Comfortable Environment",
         category: "pediatric"
     },
     {
         id: "pedia-7",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-06 at 7.56.18 PM.jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-06 at 7.56.18 PM.jpeg",
         title: "Kids Dental Education",
         category: "pediatric"
     },
     {
         id: "pedia-8",
         type: "image",
-        src: "/assets/gallery-new/cases/Kids Cases/WhatsApp Image 2026-03-07 at 2.07.14 AM (1).jpeg",
+        src: "/assets/gallery-new/pediatric/WhatsApp Image 2026-03-07 at 2.07.14 AM (1).jpeg",
         title: "Comprehensive Pediatric Checkup",
         category: "pediatric"
     },
