@@ -26,7 +26,8 @@ const FloatingWhatsApp = () => {
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
 
     return (
-        <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
+        <div className="fixed bottom-36 lg:bottom-6 right-4 lg:right-6 z-[100] flex flex-col items-end pointer-events-none">
+            <div className="pointer-events-auto">
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
@@ -96,15 +97,8 @@ const FloatingWhatsApp = () => {
                 {!isOpen && (
                     <span className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75"></span>
                 )}
-                
-                {/* Tooltip */}
-                {!isOpen && (
-                    <div className="absolute right-full mr-4 bg-white dark:bg-slate-800 text-slate-800 dark:text-white text-xs font-bold px-3 py-2 rounded-xl shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                        {language === 'ar' ? 'تواصل معنا' : 'Chat with us'}
-                        <div className="absolute top-1/2 -right-1 w-2 h-2 bg-white dark:bg-slate-800 rotate-45 -translate-y-1/2"></div>
-                    </div>
-                )}
             </motion.button>
+            </div>
         </div>
     );
 };
