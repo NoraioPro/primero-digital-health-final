@@ -16,6 +16,7 @@ import RootCanalPage from "./pages/RootCanalPage";
 import OralSurgeryPage from "./pages/OralSurgeryPage";
 import PromotionalLandingPage from "./pages/PromotionalLandingPage";
 import NotFound from "./pages/NotFound";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
+          <FloatingWhatsApp />
           <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Routes>
               <Route path="/" element={<Index />} />

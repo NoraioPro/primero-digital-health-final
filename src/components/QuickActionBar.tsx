@@ -88,13 +88,6 @@ const QuickActionBar = () => {
             )
         },
         {
-            id: 'whatsapp',
-            icon: MessageCircle,
-            color: '#25D366', // WhatsApp Green
-            label: 'WhatsApp',
-            href: 'https://wa.me/201200093366'
-        },
-        {
             id: 'emergency',
             icon: PhoneCall,
             color: '#34C759', // Success/Green
