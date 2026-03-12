@@ -3,6 +3,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { InstagramEmbed, FacebookEmbed } from "react-social-media-embed";
 import { InteractiveIcon } from "./AnimatedIcons";
 import { Instagram, Facebook } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const SocialFeeds = () => {
     const { t, language } = useLanguage();
@@ -40,7 +41,8 @@ const SocialFeeds = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="glass-apple rounded-[2.5rem] p-6 md:p-8 flex flex-col border-white/10 shadow-3xl"
+                        whileHover={{ y: -5 }}
+                        className="glass-apple rounded-[2.5rem] p-6 md:p-8 flex flex-col border-white/10 shadow-3xl transition-all hover:border-primary/20"
                     >
                         <div className="flex items-center gap-4 mb-8">
                             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center shadow-lg">
@@ -62,8 +64,34 @@ const SocialFeeds = () => {
                             </motion.a>
                         </div>
 
-                        <div className="rounded-3xl overflow-hidden bg-slate-900/50 min-h-[500px] flex items-center justify-center">
-                            <InstagramEmbed url="https://www.instagram.com/primero.clinic/" width="100%" />
+                        {/* Premium Instagram Preview Card */}
+                        <div className="relative rounded-3xl overflow-hidden bg-slate-900/50 aspect-square group/ig shadow-inner border border-white/5">
+                            <img 
+                                src="/assets/gallery-new/team/team-افضل-عيادة-اسنان-في-القاهرة-مدينة-نصر (2).jpg" 
+                                alt="Primero Clinic Instagram" 
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover/ig:scale-110 opacity-60"
+                            />
+                            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center space-y-4">
+                                <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                                    <Instagram className="w-8 h-8 text-white" />
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-2">
+                                        {language === 'ar' ? 'شاهد أحدث أعمالنا' : 'View Our Latest Transformations'}
+                                    </h4>
+                                    <p className="text-slate-300 text-sm">
+                                        {language === 'ar' 
+                                            ? 'انضم إلينا على إنستجرام لمتابعة حالات تجميل وزراعة الأسنان يومياً' 
+                                            : 'Join us on Instagram to see daily smile makeovers and dental implant cases'}
+                                    </p>
+                                </div>
+                                <Button 
+                                    onClick={() => window.open("https://www.instagram.com/primero.clinic/", "_blank")}
+                                    className="rounded-full bg-white text-black hover:bg-slate-100 px-8"
+                                >
+                                    {language === 'ar' ? 'افتح إنستجرام' : 'Open Instagram'}
+                                </Button>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -73,7 +101,8 @@ const SocialFeeds = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="glass-apple rounded-[2.5rem] p-6 md:p-8 flex flex-col border-white/10 shadow-3xl"
+                        whileHover={{ y: -5 }}
+                        className="glass-apple rounded-[2.5rem] p-6 md:p-8 flex flex-col border-white/10 shadow-3xl transition-all hover:border-primary/20"
                     >
                         <div className="flex items-center gap-4 mb-8">
                             <div className="w-12 h-12 rounded-2xl bg-[#1877F2] flex items-center justify-center shadow-lg">
@@ -95,8 +124,17 @@ const SocialFeeds = () => {
                             </motion.a>
                         </div>
 
-                        <div className="rounded-3xl overflow-hidden bg-white min-h-[500px] flex items-center justify-center w-full">
-                            <FacebookEmbed url="https://www.facebook.com/Primero.Clinic/" width="100%" />
+                        <div className="rounded-3xl overflow-hidden bg-white min-h-[500px] flex items-center justify-center w-full border border-white/10 shadow-inner">
+                            <iframe 
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPrimero.Clinic%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                                width="100%" 
+                                height="500" 
+                                style={{ border: 'none', overflow: 'hidden' }} 
+                                scrolling="no" 
+                                frameBorder="0" 
+                                allowFullScreen={true} 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            ></iframe>
                         </div>
                     </motion.div>
                 </div>

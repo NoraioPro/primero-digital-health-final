@@ -93,6 +93,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
 
   body {
@@ -119,7 +120,13 @@
   }
 
   .glass {
-    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+    @apply bg-card/60 backdrop-blur-xl border border-white/10;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-nav {
+    @apply bg-background/60 backdrop-blur-2xl border-b border-white/5;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   }
 
   .glass-apple {

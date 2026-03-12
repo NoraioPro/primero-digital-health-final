@@ -20,6 +20,33 @@ const ImplantsPage = () => {
             <Helmet>
                 <title>{t('dentalImplants')} | {t('clinicName')}</title>
                 <meta name="description" content={t('implantsIntro')} />
+                <meta name="keywords" content="dental implants cairo, dental implants nasr city, tooth replacement egypt, best implant dentist cairo" />
+                <link rel="canonical" href="https://primerodental.com/zeraet-asnan-madinet-nasr" />
+                
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={`${t('dentalImplants')} | ${t('clinicName')}`} />
+                <meta property="og:description" content={t('implantsIntro')} />
+                <meta property="og:url" content="https://primerodental.com/zeraet-asnan-madinet-nasr" />
+                
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={`${t('dentalImplants')} | ${t('clinicName')}`} />
+                <meta name="twitter:description" content={t('implantsIntro')} />
+
+                {/* Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": t('dentalImplants'),
+                        "serviceType": "Dental Implant Surgery",
+                        "provider": {
+                            "@id": "https://primerodental.com/#clinic"
+                        },
+                        "description": t('implantsIntro')
+                    })}
+                </script>
             </Helmet>
 
             <ServicePageLayout

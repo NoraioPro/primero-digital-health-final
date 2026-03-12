@@ -40,7 +40,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl">
+            <motion.div whileHover={{ y: -5 }} className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl transition-all hover:bg-white/[0.08] hover:border-primary/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group">
                   <InteractiveIcon icon={MapPin} className="w-6 h-6 text-primary" />
@@ -50,9 +50,9 @@ const ContactSection = () => {
                   <p className="text-slate-300">{t('locationAddress')}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl">
+            <motion.div whileHover={{ y: -5 }} className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl transition-all hover:bg-white/[0.08] hover:border-primary/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group">
                   <InteractiveIcon icon={Phone} className="w-6 h-6 text-primary" />
@@ -65,9 +65,9 @@ const ContactSection = () => {
                   <p className="text-slate-400 text-sm mt-1">{t('callOrWhatsapp')}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl">
+            <motion.div whileHover={{ y: -5 }} className="glass rounded-2xl p-6 border-white/10 bg-white/5 shadow-xl transition-all hover:bg-white/[0.08] hover:border-primary/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group">
                   <InteractiveIcon icon={Clock} className="w-6 h-6 text-primary" />
@@ -77,7 +77,7 @@ const ContactSection = () => {
                   <p className="text-slate-200 font-medium">{t('workingDaily')}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* CTA Card */}

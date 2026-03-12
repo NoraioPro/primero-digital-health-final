@@ -154,9 +154,13 @@ const Index = () => {
       <main className="min-h-screen bg-background">
         <Navbar />
         <HeroSection />
-        <ServicesSection />
+        <div id="services">
+          <ServicesSection />
+        </div>
         <TechnologySection />
-        <WhyChooseUs />
+        <div id="why-choose">
+          <WhyChooseUs />
+        </div>
         <section id="gallery" className="py-24 bg-background px-4">
           <div className="container mx-auto">
             <div className="max-w-3xl mb-16 px-4 md:px-0">
@@ -171,13 +175,19 @@ const Index = () => {
           </div>
         </section>
 
-        <VideoGallery
-          videos={videoGalleryItems}
-        />
+        <div id="video-review">
+          <VideoGallery
+            videos={videoGalleryItems}
+          />
+        </div>
 
-        <ReviewsSection />
+        <div id="reviews">
+          <ReviewsSection />
+        </div>
         <SocialFeeds />
-        <ContactSection />
+        <div id="location">
+          <ContactSection />
+        </div>
         <Footer />
         <QuickActionBar />
       </main>

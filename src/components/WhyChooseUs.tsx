@@ -4,6 +4,27 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { clinicImages } from "@/lib/clinicImages";
 import { InteractiveIcon } from "./AnimatedIcons";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const WhyChooseUs = () => {
   const { t } = useLanguage();
 
@@ -66,15 +87,19 @@ const WhyChooseUs = () => {
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+        >
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              variants={itemVariants}
               className="group"
+              whileHover={{ y: -5 }}
             >
               <div className="flex gap-4 p-6 rounded-2xl border border-white/10 bg-white/5 shadow-xl hover:bg-white/[0.08] hover:border-primary/20 transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -90,7 +115,7 @@ const WhyChooseUs = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Clinic Team Image */}
         {clinicImages.team.enabled && (

@@ -61,19 +61,20 @@ const Gallery: React.FC<GalleryProps> = ({ items, title, subtitle, showFilters =
                 <div className="flex justify-center mb-16 px-4">
                     <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 p-2 md:p-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full overflow-x-auto no-scrollbar max-w-full shadow-2xl">
                         {categories.map((cat) => (
-                            <Button
-                                key={cat}
-                                variant={filter === cat ? "default" : "ghost"}
-                                onClick={() => setFilter(cat!)}
-                                className={cn(
-                                    "rounded-full px-5 md:px-8 h-10 md:h-12 text-sm md:text-base transition-all duration-500 whitespace-nowrap font-semibold",
-                                    filter === cat
-                                        ? "bg-primary text-white shadow-xl shadow-primary/30 scale-105"
-                                        : "text-slate-400 hover:text-white hover:bg-white/10"
-                                )}
-                            >
-                                {cat === "all" ? "All Gallery" : galleryCategories[cat as keyof typeof galleryCategories] || cat}
-                            </Button>
+                            <motion.div key={cat} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <Button
+                                    variant={filter === cat ? "default" : "ghost"}
+                                    onClick={() => setFilter(cat!)}
+                                    className={cn(
+                                        "rounded-full px-5 md:px-8 h-10 md:h-12 text-sm md:text-base transition-all duration-500 whitespace-nowrap font-semibold w-full",
+                                        filter === cat
+                                            ? "bg-primary text-white shadow-xl shadow-primary/30 scale-105"
+                                            : "text-slate-400 hover:text-white hover:bg-white/10"
+                                    )}
+                                >
+                                    {cat === "all" ? "All Gallery" : galleryCategories[cat as keyof typeof galleryCategories] || cat}
+                                </Button>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

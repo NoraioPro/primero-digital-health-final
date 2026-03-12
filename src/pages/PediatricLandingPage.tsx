@@ -33,10 +33,9 @@ const heroVideos = [
 ];
 
 const moreVideos = [
-    { id: "5oA_RawPR8M", title: "أسنان أطفال بدون ألم" },
-    { id: "hku8K1wz5Ys", title: "ابتسامة طفلك صحية" },
-    { id: "Hkosr5ytyq0", title: "تقنيات وقاية متقدمة" },
-    { id: "lMHZdpMaZfE", title: "فريق متخصص لأطفالك" },
+    { id: "hGMx3-5RYQA", title: "تجربة زراعة الأسنان في بريميرو" },
+    { id: "rlcCBe8uaKU", title: "أسنان أطفال بدون ألم" },
+    { id: "OPAkve5hprE", title: "بيئة مرحة وآمنة للأطفال" },
 ];
 
 const whyPoints = [
@@ -377,7 +376,7 @@ const PediatricLandingPage = () => {
             </section>
 
             {/* ── HERO VIDEOS (2 shorts) ── */}
-            <section className="py-16 container mx-auto px-4">
+            <section id="video-review" className="py-16 container mx-auto px-4">
                 <div className="flex flex-wrap justify-center gap-8">
                     {heroVideos.map((v) => (
                         <ShortsEmbed key={v.id} id={v.id} title={v.title} />
@@ -393,6 +392,7 @@ const PediatricLandingPage = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="text-center mb-14"
+                        id="how-to-kids"
                     >
                         <span className="text-primary text-sm font-semibold tracking-widest uppercase block mb-3">التخصص يصنع الفرق</span>
                         <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
@@ -400,7 +400,7 @@ const PediatricLandingPage = () => {
                             <span className="text-primary"> هو الحل الأمثل لطفلك؟</span>
                         </h2>
                         <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-                            صحة أسنان طفلك تبدأ من اختيار الطبيب الذي يفهم احتياجاته النفسية قبل الطبية. في مركز بريميرو، نؤمن أن زيارة طبيب الأسنان يجب أن تكون تجربة سعيدة خالية من الخوف.
+                            صحة أسنان طفلك تبدأ من اختيار الطبيب الذي يفهم احتياجاته النفسية قبل الطبية. في مركز بريميرو بمدينة نصر، نؤمن أن زيارة طبيب الأسنان يجب أن تكون تجربة سعيدة خالية من الخوف، لضمان نمو أسنان طفلك بشكل سليم وصحي.
                         </p>
                     </motion.div>
 
@@ -428,7 +428,7 @@ const PediatricLandingPage = () => {
             </section>
 
             {/* ── WHY PRIMERO ── */}
-            <section className="py-20 container mx-auto px-4">
+            <section id="why-choose" className="py-20 container mx-auto px-4">
                 <div className="max-w-5xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <motion.div
@@ -501,28 +501,67 @@ const PediatricLandingPage = () => {
                 </div>
             </section>
 
-            {/* ── MORE VIDEOS (4 shorts) ── */}
-            <section className="py-20 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+            {/* ── STERILIZATION ── */}
+            <section id="sterilization" className="py-20 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
                 <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-center mb-14"
-                    >
-                        <span className="text-primary text-sm font-semibold tracking-widest uppercase block mb-3">شاهد بنفسك</span>
-                        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-                            قصص نجاح من عيادتنا
-                        </h2>
-                        <p className="text-slate-400 max-w-xl mx-auto">
-                            شاهد كيف تجعل بريميرو من زيارة طبيب الأسنان تجربة محببة للأطفال والأهالي
-                        </p>
-                    </motion.div>
-                    <div className="flex flex-wrap justify-center gap-6">
-                        {moreVideos.map((v) => (
-                            <ShortsEmbed key={v.id} id={v.id} title={v.title} />
-                        ))}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <span className="text-primary text-sm font-semibold tracking-widest uppercase block mb-3">السلامة أولاً</span>
+                            <h2 className="text-3xl md:text-4xl font-black text-white mb-6">التعقيم في عيادتنا</h2>
+                            <p className="text-slate-400 leading-relaxed mb-6">
+                                أدوات زراعة الاسنان وأسنان الأطفال بتحتاج بروتوكول وطرق خاصة جدا للتعقيم لضمان السلامة لكل مرضانا. في بريميرو للأسنان بنطبق أحدث بروتوكولات تعقيم الأدوات باستخدام Ultrasonic Cleaner، و Wrapping، ثم Autoclave بأحدث طراز.
+                            </p>
+                            <ul className="space-y-3">
+                                <li className="flex items-center gap-3 text-slate-300">
+                                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                                    <span>أدوات معقمة وآمنة 100% لكل مريض.</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-300">
+                                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                                    <span>مطابقة لأعلى المعايير العالمية ومكافحة العدوى.</span>
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-300">
+                                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                                    <span>راحة واطمئنان إن علاجك في أيد أمينة.</span>
+                                </li>
+                            </ul>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl"
+                        >
+                            <img 
+                                src="/assets/gallery-new/team/team-افضل-عيادة-اسنان-في-القاهرة-مدينة-نصر (1).jpg" 
+                                alt="فريق عمل بريميرو" 
+                                className="w-full h-full object-cover"
+                            />
+                        </motion.div>
                     </div>
+                </div>
+            </section>
+
+            {/* ── SERVICES ── */}
+            <section id="services" className="py-20 container mx-auto px-4 text-center">
+                <span className="text-primary text-sm font-semibold tracking-widest uppercase block mb-3">خدماتنا المتكاملة</span>
+                <h2 className="text-3xl md:text-4xl font-black text-white mb-12">لابتسامة أكثر صحة وجمالًا</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    {[
+                        { title: "زراعة الأسنان", desc: "استعد وظيفة ومظهر أسنانك مع بديل دائم ومظهر طبيعي.", link: "/zeraet-asnan-madinet-nasr" },
+                        { title: "تقويم الأسنان الشفاف", desc: "ابتسامة مثالية بتكتم وثقة مع التقويم الشفاف المتطور.", link: "/orthodontics" },
+                        { title: "طب أسنان الأطفال", desc: "بداية صحية لابتسامة قوية ومستقبل مشرق لطفلك.", link: "/asnan-atfal" },
+                    ].map((s, i) => (
+                        <div key={i} className="glass rounded-[2rem] p-8 border border-white/5 hover:border-primary/20 transition-all group">
+                             <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">{s.title}</h3>
+                             <p className="text-slate-400 text-sm mb-6">{s.desc}</p>
+                             <a href={s.link} className="text-primary font-bold text-sm hover:underline italic">اقرأ المزيد ←</a>
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -550,7 +589,7 @@ const PediatricLandingPage = () => {
             </section>
 
             {/* ── REVIEWS ── */}
-            <section className="py-20 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+            <section id="reviews" className="py-20 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -580,8 +619,8 @@ const PediatricLandingPage = () => {
             </section>
 
             {/* ── CONTACT ── */}
-            <section id="contact" className="py-20 container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
+            <section id="contact-us" className="py-20 container mx-auto px-4">
+                <div className="max-w-4xl mx-auto" id="location">
                     <div className="glass rounded-[3rem] p-8 md:p-14 border border-white/10 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-transparent to-cyan-500/10" />
                         <div className="relative z-10 text-center">

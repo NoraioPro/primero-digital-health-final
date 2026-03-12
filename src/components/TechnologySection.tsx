@@ -109,10 +109,14 @@ const TechnologySection = () => {
             { value: "100%", label: t('sterilizationLabel') },
             { value: "6", label: t('specialtiesLabel') },
           ].map((stat) => (
-            <div key={stat.label} className="text-center glass rounded-2xl p-6 border-border/30">
+            <motion.div 
+              key={stat.label} 
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="text-center glass rounded-2xl p-6 border-border/30 transition-all hover:border-primary/30"
+            >
               <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">{stat.value}</div>
               <div className="text-sm text-muted-foreground">{stat.label}</div>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>

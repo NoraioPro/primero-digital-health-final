@@ -9,6 +9,7 @@ import { InteractiveIcon } from "./AnimatedIcons";
 import primeroLogo from "@/assets/primero-logo.svg";
 
 const Navbar = () => {
+
   const { t, language } = useLanguage();
 
   const navLinks = [
@@ -35,7 +36,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-3" : "bg-transparent py-5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass-nav py-3" : "bg-transparent py-5"
         }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
