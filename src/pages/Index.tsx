@@ -28,7 +28,7 @@ const Index = () => {
           name="keywords"
           content="dental clinic nasr city, best dental clinic cairo, dentist nasr city, cosmetic dentistry egypt, dental implants cairo, hollywood smile cairo, orthodontics nasr city, laser dentistry egypt, dental clinic near me cairo"
         />
-        <link rel="canonical" href="https://primerodental.com/" />
+        <link rel="canonical" href="https://www.primerodentalclinic.com/" />
 
         {/* AI & Search Engine Bots */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -63,14 +63,14 @@ const Index = () => {
             {
               "@context": "https://schema.org",
               "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-              "@id": "https://primerodental.com/#clinic",
+              "@id": "https://www.primerodentalclinic.com/#clinic",
               name: "Primero Dental Clinic",
               alternateName: "مركز بريميرو لطب الأسنان",
               description: "The leading advanced digital dentistry clinic in Nasr City, Cairo, specializing in implants, cosmetic dentistry, and comprehensive dental care.",
-              url: "https://primerodental.com",
+              url: "https://www.primerodentalclinic.com",
               telephone: "+201200093366",
               priceRange: "$$",
-              image: "https://primerodental.com/clinic-logo.png",
+              image: "https://www.primerodentalclinic.com/clinic-logo.png",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "50 El Nozha Street",
@@ -125,7 +125,7 @@ const Index = () => {
                 "@type": "ReserveAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://primerodental.com/#location",
+                  urlTemplate: "https://www.primerodentalclinic.com/#location",
                   actionPlatform: [
                     "http://schema.org/DesktopWebPlatform",
                     "http://schema.org/MobileWebPlatform"
@@ -140,11 +140,11 @@ const Index = () => {
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://primerodental.com/#website",
-              url: "https://primerodental.com",
+              "@id": "https://www.primerodentalclinic.com/#website",
+              url: "https://www.primerodentalclinic.com",
               name: "Primero Dental Clinic",
               description: "Advanced Digital Dentistry in Nasr City, Cairo",
-              publisher: { "@id": "https://primerodental.com/#clinic" },
+              publisher: { "@id": "https://www.primerodentalclinic.com/#clinic" },
               inLanguage: ["en-US", "ar-EG"]
             }
           ])}

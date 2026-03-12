@@ -251,11 +251,11 @@ const PediatricLandingPage = () => {
                     content="أفضل طبيب أسنان أطفال في مدينة نصر. علاج الأسنان اللبنية، فلورايد، سد شقوق، بيئة مرحة بدون خوف. احجز الآن في مركز بريميرو – 01200093366."
                 />
                 <meta name="keywords" content="دكتور أسنان أطفال مدينة نصر, أسنان أطفال بلا ألم, طب أسنان أطفال, حشو أسنان أطفال, فلورايد أطفال, عيادة أسنان أطفال القاهرة, بريميرو" />
-                <link rel="canonical" href="https://primerodental.com/asnan-atfal/" />
+                <link rel="canonical" href="https://www.primerodentalclinic.com/asnan-atfal/" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://primerodental.com/asnan-atfal/" />
+                <meta property="og:url" content="https://www.primerodentalclinic.com/asnan-atfal/" />
                 <meta property="og:title" content="دكتور أسنان أطفال بمدينة نصر | بريميرو" />
                 <meta property="og:description" content="علاج أسنان الأطفال بأحدث التقنيات في بيئة مرحة خالية من الخوف. احجز الآن!" />
                 <meta property="og:locale" content="ar_EG" />
@@ -271,7 +271,7 @@ const PediatricLandingPage = () => {
                     "@type": "MedicalClinic",
                     name: "مركز بريميرو لطب الأسنان",
                     alternateName: "Primero Dental Clinic",
-                    url: "https://primerodental.com",
+                    url: "https://www.primerodentalclinic.com",
                     telephone: "+201200093366",
                     address: {
                         "@type": "PostalAddress",

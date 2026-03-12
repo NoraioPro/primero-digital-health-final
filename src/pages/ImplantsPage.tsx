@@ -21,13 +21,13 @@ const ImplantsPage = () => {
                 <title>{t('dentalImplants')} | {t('clinicName')}</title>
                 <meta name="description" content={t('implantsIntro')} />
                 <meta name="keywords" content="dental implants cairo, dental implants nasr city, tooth replacement egypt, best implant dentist cairo" />
-                <link rel="canonical" href="https://primerodental.com/zeraet-asnan-madinet-nasr/" />
+                <link rel="canonical" href="https://www.primerodentalclinic.com/zeraet-asnan-madinet-nasr/" />
                 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={`${t('dentalImplants')} | ${t('clinicName')}`} />
                 <meta property="og:description" content={t('implantsIntro')} />
-                <meta property="og:url" content="https://primerodental.com/zeraet-asnan-madinet-nasr/" />
+                <meta property="og:url" content="https://www.primerodentalclinic.com/zeraet-asnan-madinet-nasr/" />
                 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -42,7 +42,7 @@ const ImplantsPage = () => {
                         "name": t('dentalImplants'),
                         "serviceType": "Dental Implant Surgery",
                         "provider": {
-                            "@id": "https://primerodental.com/#clinic"
+                            "@id": "https://www.primerodentalclinic.com/#clinic"
                         },
                         "description": t('implantsIntro')
                     })}
