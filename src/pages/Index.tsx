@@ -28,7 +28,7 @@ const Index = () => {
           name="keywords"
           content="dental clinic nasr city, best dental clinic cairo, dentist nasr city, cosmetic dentistry egypt, dental implants cairo, hollywood smile cairo, orthodontics nasr city, laser dentistry egypt, dental clinic near me cairo"
         />
-        <link rel="canonical" href="https://primerodental.com" />
+        <link rel="canonical" href="https://primerodental.com/" />
 
         {/* AI & Search Engine Bots */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

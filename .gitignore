@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+*.zip
+New Data Images and videos/
+Raw Data/
+*.mp4
+!public/assets/videos/*.mp4
